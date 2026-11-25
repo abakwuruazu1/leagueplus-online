@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "startedAt": 1795517138630,
+  "initAt": 1795517139206,
+  "games": {
+    "3": {
+      "lastResult": 441481,
+      "lastUpcoming": 441482,
+      "lastFetch": 1795518486538,
+      "next": 1795518606538,
+      "error": null,
+      "betOpen": 1795518192000,
+      "rounds": {
+        "441482": {
+          "betOpen": 1795518192000,
+          "betClose": 1795518551000
+        }
+      }
+    },
+    "4": {
+      "lastResult": 441480,
+      "lastUpcoming": 441481,
+      "lastFetch": 1795518430811,
+      "next": 1795518606000,
+      "error": null,
+      "betOpen": 1795518312000,
+      "rounds": {
+        "441481": {
+          "betOpen": 1795518312000,
+          "betClose": 1795518671000
+        }
+      }
+    },
+    "6": {
+      "lastResult": 355434,
+      "lastUpcoming": 355435,
+      "lastFetch": 1795518431008,
+      "next": 1795518551008,
+      "error": null,
+      "betOpen": 1795518072000,
+      "rounds": {
+        "355435": {
+          "betOpen": 1795518072000,
+          "betClose": 1795518431000
+        }
+      }
+    },
+    "7": {
+      "lastResult": 152799,
+      "lastUpcoming": 152800,
+      "lastFetch": 1795518431222,
+      "next": 1795518551222,
+      "error": null,
+      "betOpen": 1795518267000,
+      "rounds": {
+        "152800": {
+          "betOpen": 1795518267000,
+          "betClose": 1795518476000
+        }
+      }
+    }
+  }
+}

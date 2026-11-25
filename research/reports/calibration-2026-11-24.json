@@ -1,0 +1,441 @@
+{
+  "meta": {
+    "version": "stage7-calibration-v1",
+    "generatedAt": 1795537977886,
+    "source": "collector",
+    "files": 1,
+    "samples": 364,
+    "evaluation": {
+      "version": "stage5-eval-v1",
+      "generatedAt": 1795537977830,
+      "matches": 104,
+      "rounds": 8,
+      "testRounds": 4,
+      "testMatches": 52,
+      "trainNTotal": 52,
+      "minTrainRounds": 3,
+      "minCompMatches": 10,
+      "fairMethod": "proportional",
+      "permutations": 99,
+      "seed": 20261124,
+      "models": [
+        "base",
+        "market",
+        "mkt",
+        "team",
+        "dc",
+        "emp",
+        "blend",
+        "ensemble"
+      ],
+      "labels": {
+        "base": "historical base",
+        "market": "market fair",
+        "mkt": "market Poisson",
+        "team": "team ratings",
+        "dc": "Dixon-Coles",
+        "emp": "empirical/Bayesian",
+        "blend": "blend(team,mkt)",
+        "ensemble": "equal ensemble"
+      },
+      "warnings": [
+        "Small evaluation sample (4 test rounds, 52 matches); treat model differences as provisional."
+      ]
+    },
+    "calibration": {
+      "n": 364,
+      "test": 140,
+      "folds": 2,
+      "minTrainSamples": 100,
+      "minTestSamples": 50,
+      "methods": [
+        "platt",
+        "isotonic"
+      ],
+      "permutations": 99,
+      "seed": 20261124,
+      "warnings": [
+        "No calibration method improved out-of-sample log loss after paired correction; calibration is disabled.",
+        "Calibration test sample is small (140 selections); the decision is provisional."
+      ]
+    },
+    "weights": {
+      "n": 364,
+      "test": 140,
+      "folds": 2,
+      "minTrainSamples": 100,
+      "minTestSamples": 50,
+      "shrink": 0.5,
+      "permutations": 99,
+      "seed": 20261124,
+      "warnings": [
+        "Fewer than two component models were available in the weight-training windows; adaptive weights cannot differ from the available model.",
+        "Every adaptive-weight fit was insufficient; the equal ensemble remains in use.",
+        "No adaptive weight vector beat the equal ensemble out-of-sample after paired correction; adaptive weights are disabled.",
+        "Adaptive-weight test sample is small (140 selections); the decision is provisional."
+      ]
+    }
+  },
+  "calibration": {
+    "metrics": {
+      "raw": {
+        "n": 140,
+        "brier": 0.2326683448685572,
+        "logLoss": 0.6577110484142369
+      },
+      "methods": {
+        "platt": {
+          "n": 140,
+          "brier": 0.2319209928557843,
+          "logLoss": 0.655601718137127,
+          "diffLogLoss": -0.0021093302771097826,
+          "low": -0.00906518528357554,
+          "high": 0.0053105573755864435,
+          "p": 0.46,
+          "q": 0.46
+        },
+        "isotonic": {
+          "n": 140,
+          "brier": 0.2394809291554146,
+          "logLoss": 0.852226724608791,
+          "diffLogLoss": 0.19451567619455426,
+          "low": 0.000551444408713631,
+          "high": 0.5826046907409813,
+          "p": 0.08,
+          "q": 0.16
+        }
+      }
+    },
+    "decision": {
+      "enabled": false,
+      "method": null,
+      "calibrator": null,
+      "diffLogLoss": -0.0021093302771097826,
+      "low": -0.00906518528357554,
+      "high": 0.0053105573755864435,
+      "p": 0.46,
+      "q": 0.46,
+      "n": 140
+    },
+    "reliability": {
+      "raw": {
+        "version": "stage7-calibration-v1",
+        "n": 140,
+        "bins": [
+          {
+            "i": 0,
+            "lo": 0,
+            "hi": 0.1,
+            "n": 1,
+            "sumP": 0.09381432116513233,
+            "sumY": 0,
+            "avgP": 0.09381432116513233,
+            "obs": 0,
+            "gap": 0.09381432116513233
+          },
+          {
+            "i": 1,
+            "lo": 0.1,
+            "hi": 0.2,
+            "n": 10,
+            "sumP": 1.6159568311005408,
+            "sumY": 3,
+            "avgP": 0.16159568311005407,
+            "obs": 0.3,
+            "gap": -0.13840431688994592
+          },
+          {
+            "i": 2,
+            "lo": 0.2,
+            "hi": 0.3,
+            "n": 24,
+            "sumP": 5.824476749517686,
+            "sumY": 6,
+            "avgP": 0.24268653122990358,
+            "obs": 0.25,
+            "gap": -0.007313468770096421
+          },
+          {
+            "i": 3,
+            "lo": 0.3,
+            "hi": 0.4,
+            "n": 13,
+            "sumP": 4.777373489839121,
+            "sumY": 3,
+            "avgP": 0.36749026844916316,
+            "obs": 0.23076923076923078,
+            "gap": 0.13672103767993238
+          },
+          {
+            "i": 4,
+            "lo": 0.4,
+            "hi": 0.5,
+            "n": 40,
+            "sumP": 18.356905018400003,
+            "sumY": 21,
+            "avgP": 0.45892262546000007,
+            "obs": 0.525,
+            "gap": -0.06607737453999996
+          },
+          {
+            "i": 5,
+            "lo": 0.5,
+            "hi": 0.6,
+            "n": 40,
+            "sumP": 21.58215952896285,
+            "sumY": 20,
+            "avgP": 0.5395539882240713,
+            "obs": 0.5,
+            "gap": 0.0395539882240713
+          },
+          {
+            "i": 6,
+            "lo": 0.6,
+            "hi": 0.7,
+            "n": 10,
+            "sumP": 6.297778637651812,
+            "sumY": 5,
+            "avgP": 0.6297778637651812,
+            "obs": 0.5,
+            "gap": 0.1297778637651812
+          },
+          {
+            "i": 7,
+            "lo": 0.7,
+            "hi": 0.8,
+            "n": 2,
+            "sumP": 1.451535423362866,
+            "sumY": 2,
+            "avgP": 0.725767711681433,
+            "obs": 1,
+            "gap": -0.27423228831856705
+          },
+          {
+            "i": 8,
+            "lo": 0.8,
+            "hi": 0.9,
+            "n": 0,
+            "sumP": 0,
+            "sumY": 0,
+            "avgP": null,
+            "obs": null,
+            "gap": null
+          },
+          {
+            "i": 9,
+            "lo": 0.9,
+            "hi": 1,
+            "n": 0,
+            "sumP": 0,
+            "sumY": 0,
+            "avgP": null,
+            "obs": null,
+            "gap": null
+          }
+        ],
+        "brier": 0.2326683448685572,
+        "logLoss": 0.6577110484142369,
+        "ece": 0.06787322825169874,
+        "mce": 0.27423228831856705,
+        "base": 0.42857142857142855,
+        "decomposition": {
+          "uncertainty": 0.24489795918367344,
+          "reliability": 0.007147898853203049,
+          "resolution": 0.02073587127158556,
+          "binnedBrier": 0.23130998676529094
+        }
+      },
+      "calibrated": null
+    },
+    "warnings": [
+      "No calibration method improved out-of-sample log loss after paired correction; calibration is disabled.",
+      "Calibration test sample is small (140 selections); the decision is provisional."
+    ]
+  },
+  "weights": {
+    "version": "stage7-weights-v1",
+    "meta": {
+      "n": 364,
+      "test": 140,
+      "folds": 2,
+      "minTrainSamples": 100,
+      "minTestSamples": 50,
+      "shrink": 0.5,
+      "permutations": 99,
+      "seed": 20261124,
+      "warnings": [
+        "Fewer than two component models were available in the weight-training windows; adaptive weights cannot differ from the available model.",
+        "Every adaptive-weight fit was insufficient; the equal ensemble remains in use.",
+        "No adaptive weight vector beat the equal ensemble out-of-sample after paired correction; adaptive weights are disabled.",
+        "Adaptive-weight test sample is small (140 selections); the decision is provisional."
+      ]
+    },
+    "metrics": {
+      "equal": {
+        "n": 140,
+        "brier": 0.2326683448685572,
+        "logLoss": 0.6577110484142369
+      },
+      "market": {
+        "n": 140,
+        "brier": 0.23253854646094677,
+        "logLoss": 0.6573385300612676
+      },
+      "global": {
+        "n": 140,
+        "brier": 0.2326683448685572,
+        "logLoss": 0.6577110484142369
+      },
+      "perMarket": {
+        "n": 140,
+        "brier": 0.2326683448685572,
+        "logLoss": 0.6577110484142369
+      },
+      "single": {
+        "mkt": {
+          "n": 140,
+          "brier": 0.2326683448685572,
+          "logLoss": 0.6577110484142369
+        },
+        "dc": {
+          "n": 0,
+          "brier": null,
+          "logLoss": null
+        },
+        "emp": {
+          "n": 0,
+          "brier": null,
+          "logLoss": null
+        },
+        "team": {
+          "n": 0,
+          "brier": null,
+          "logLoss": null
+        }
+      }
+    },
+    "comparisons": [
+      {
+        "model": "global",
+        "n": 140,
+        "diffLogLoss": 0,
+        "low": 0,
+        "high": 0,
+        "p": 1,
+        "q": 1
+      },
+      {
+        "model": "perMarket",
+        "n": 140,
+        "diffLogLoss": 0,
+        "low": 0,
+        "high": 0,
+        "p": 1,
+        "q": 1
+      }
+    ],
+    "perMarket": [
+      {
+        "market": "1X2",
+        "n": 60,
+        "diffLogLoss": 0,
+        "low": 0,
+        "high": 0,
+        "p": 1,
+        "q": 1,
+        "enabled": false
+      },
+      {
+        "market": "OU2.5",
+        "n": 40,
+        "diffLogLoss": 0,
+        "low": 0,
+        "high": 0,
+        "p": 1,
+        "q": 1,
+        "enabled": false
+      },
+      {
+        "market": "BTTS",
+        "n": 40,
+        "diffLogLoss": 0,
+        "low": 0,
+        "high": 0,
+        "p": 1,
+        "q": 1,
+        "enabled": false
+      }
+    ],
+    "decision": {
+      "enabled": false,
+      "weights": null,
+      "rawWeights": null,
+      "shrink": 0.5,
+      "fit": null,
+      "perMarket": {},
+      "diffLogLoss": 0,
+      "low": 0,
+      "high": 0,
+      "p": 1,
+      "q": 1,
+      "n": 140
+    },
+    "warnings": [
+      "Fewer than two component models were available in the weight-training windows; adaptive weights cannot differ from the available model.",
+      "Every adaptive-weight fit was insufficient; the equal ensemble remains in use.",
+      "No adaptive weight vector beat the equal ensemble out-of-sample after paired correction; adaptive weights are disabled.",
+      "Adaptive-weight test sample is small (140 selections); the decision is provisional."
+    ]
+  },
+  "checks": [
+    {
+      "round": "6:355434",
+      "comp": 4,
+      "trainN": 10,
+      "testStart": 1795518072000,
+      "trainCutoff": 1795516992000,
+      "leakage": false
+    },
+    {
+      "round": "3:441481",
+      "comp": 9,
+      "trainN": 12,
+      "testStart": 1795518192000,
+      "trainCutoff": 1795517112000,
+      "leakage": false
+    },
+    {
+      "round": "3:441481",
+      "comp": 1,
+      "trainN": 10,
+      "testStart": 1795518192000,
+      "trainCutoff": 1795517112000,
+      "leakage": false
+    },
+    {
+      "round": "7:152799",
+      "comp": 8,
+      "trainN": 10,
+      "testStart": 1795518267000,
+      "trainCutoff": 1795517007000,
+      "leakage": false
+    },
+    {
+      "round": "4:441480",
+      "comp": 2,
+      "trainN": 10,
+      "testStart": 1795518312000,
+      "trainCutoff": 1795516872000,
+      "leakage": false
+    }
+  ],
+  "warnings": [
+    "Small evaluation sample (4 test rounds, 52 matches); treat model differences as provisional.",
+    "No calibration method improved out-of-sample log loss after paired correction; calibration is disabled.",
+    "Calibration test sample is small (140 selections); the decision is provisional.",
+    "Fewer than two component models were available in the weight-training windows; adaptive weights cannot differ from the available model.",
+    "Every adaptive-weight fit was insufficient; the equal ensemble remains in use.",
+    "No adaptive weight vector beat the equal ensemble out-of-sample after paired correction; adaptive weights are disabled.",
+    "Adaptive-weight test sample is small (140 selections); the decision is provisional."
+  ]
+}

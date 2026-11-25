@@ -1,0 +1,1068 @@
+{
+  "meta": {
+    "version": "stage6-specialists-v1",
+    "generatedAt": 1795532636580,
+    "matches": 104,
+    "rounds": 8,
+    "testMatches": 52,
+    "testRounds": 5,
+    "minTrainRounds": 3,
+    "minCompMatches": 10,
+    "minPatternSupport": 20,
+    "permutations": 99,
+    "seed": 20261124,
+    "sequenceUsable": 0,
+    "patternRules": 105,
+    "patternValidated": 0,
+    "warnings": [
+      "Small specialist sample (52 matches); enable/disable decisions are provisional.",
+      "Sequence model disabled: it did not beat the Stage 5 ensemble after paired correction or had insufficient usable state.",
+      "Pattern model disabled: no validated rules or no out-of-sample improvement over the Stage 5 ensemble."
+    ]
+  },
+  "byModel": {
+    "byMarket": {
+      "1X2": {
+        "stage5": {
+          "n": 52,
+          "brier": 0.5883417625547382,
+          "logLoss": 0.9878676174162897
+        },
+        "market": {
+          "n": 52,
+          "brier": 0.5884806652168897,
+          "logLoss": 0.9881806278556893
+        },
+        "sequence": {
+          "n": 52,
+          "brier": 0.6604056145991195,
+          "logLoss": 1.0919658297238077
+        }
+      },
+      "OU2.5": {
+        "stage5": {
+          "n": 52,
+          "brier": 0.5097136079626625,
+          "logLoss": 0.7031582284596632
+        },
+        "market": {
+          "n": 52,
+          "brier": 0.5104063968638902,
+          "logLoss": 0.7038828255002259
+        },
+        "sequence": {
+          "n": 52,
+          "brier": 0.5185180883902812,
+          "logLoss": 0.7124581605154903
+        }
+      },
+      "BTTS": {
+        "stage5": {
+          "n": 52,
+          "brier": 0.5251732827611704,
+          "logLoss": 0.7185290860733807
+        },
+        "market": {
+          "n": 52,
+          "brier": 0.524484549980339,
+          "logLoss": 0.7178211451008496
+        },
+        "sequence": {
+          "n": 52,
+          "brier": 0.4951296873355047,
+          "logLoss": 0.6882859883252977
+        }
+      }
+    },
+    "stage5": {
+      "n": 156,
+      "brier": 0.5410762177595237,
+      "logLoss": 0.8031849773164448
+    },
+    "market": {
+      "n": 156,
+      "brier": 0.5411238706870397,
+      "logLoss": 0.8032948661522548
+    },
+    "sequence": {
+      "n": 156,
+      "brier": 0.558017796774968,
+      "logLoss": 0.8309033261881982
+    }
+  },
+  "comparisons": [
+    {
+      "model": "sequence",
+      "vs": "stage5 ensemble",
+      "n": 52,
+      "diffLogLoss": 0.10409821230751781,
+      "low": -0.03368092775749719,
+      "high": 0.23430095296427877,
+      "p": 0.12,
+      "improves": false,
+      "q": 0.12
+    }
+  ],
+  "sequence": {
+    "enabled": false,
+    "comparison": {
+      "model": "sequence",
+      "vs": "stage5 ensemble",
+      "n": 52,
+      "diffLogLoss": 0.10409821230751781,
+      "low": -0.03368092775749719,
+      "high": 0.23430095296427877,
+      "p": 0.12,
+      "improves": false,
+      "q": 0.12
+    },
+    "usable": 0
+  },
+  "patterns": {
+    "enabled": false,
+    "comparison": null,
+    "discovered": 105,
+    "validated": 0,
+    "top": [
+      {
+        "id": "oneX2:0:homeForm=none",
+        "target": "oneX2",
+        "targetLabel": "1X2",
+        "class": 0,
+        "className": "H",
+        "condition": {
+          "homeForm": "none"
+        },
+        "description": "homeForm=none → 1X2=H",
+        "n": 27,
+        "baseline": 0.5,
+        "observed": 0.4444444444444444,
+        "diff": -0.05555555555555558,
+        "lift": 0.8888888888888888,
+        "ci": [
+          0.2758559767007283,
+          0.6268728052042312
+        ],
+        "p": 0.5637027832102195,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 9,
+          "observed": 0.5555555555555556,
+          "baseline": 0.5,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "oneX2:0:homeOver=none",
+        "target": "oneX2",
+        "targetLabel": "1X2",
+        "class": 0,
+        "className": "H",
+        "condition": {
+          "homeOver": "none"
+        },
+        "description": "homeOver=none → 1X2=H",
+        "n": 27,
+        "baseline": 0.5,
+        "observed": 0.4444444444444444,
+        "diff": -0.05555555555555558,
+        "lift": 0.8888888888888888,
+        "ci": [
+          0.2758559767007283,
+          0.6268728052042312
+        ],
+        "p": 0.5637027832102195,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 9,
+          "observed": 0.5555555555555556,
+          "baseline": 0.5,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "oneX2:0:prevTotal=none&homeForm=none",
+        "target": "oneX2",
+        "targetLabel": "1X2",
+        "class": 0,
+        "className": "H",
+        "condition": {
+          "prevTotal": "none",
+          "homeForm": "none"
+        },
+        "description": "prevTotal=none & homeForm=none → 1X2=H",
+        "n": 27,
+        "baseline": 0.5,
+        "observed": 0.4444444444444444,
+        "diff": -0.05555555555555558,
+        "lift": 0.8888888888888888,
+        "ci": [
+          0.2758559767007283,
+          0.6268728052042312
+        ],
+        "p": 0.5637027832102195,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 9,
+          "observed": 0.5555555555555556,
+          "baseline": 0.5,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "oneX2:0:prevTotal=none&homeOver=none",
+        "target": "oneX2",
+        "targetLabel": "1X2",
+        "class": 0,
+        "className": "H",
+        "condition": {
+          "prevTotal": "none",
+          "homeOver": "none"
+        },
+        "description": "prevTotal=none & homeOver=none → 1X2=H",
+        "n": 27,
+        "baseline": 0.5,
+        "observed": 0.4444444444444444,
+        "diff": -0.05555555555555558,
+        "lift": 0.8888888888888888,
+        "ci": [
+          0.2758559767007283,
+          0.6268728052042312
+        ],
+        "p": 0.5637027832102195,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 9,
+          "observed": 0.5555555555555556,
+          "baseline": 0.5,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "oneX2:0:homeForm=none&homeOver=none",
+        "target": "oneX2",
+        "targetLabel": "1X2",
+        "class": 0,
+        "className": "H",
+        "condition": {
+          "homeForm": "none",
+          "homeOver": "none"
+        },
+        "description": "homeForm=none & homeOver=none → 1X2=H",
+        "n": 27,
+        "baseline": 0.5,
+        "observed": 0.4444444444444444,
+        "diff": -0.05555555555555558,
+        "lift": 0.8888888888888888,
+        "ci": [
+          0.2758559767007283,
+          0.6268728052042312
+        ],
+        "p": 0.5637027832102195,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 9,
+          "observed": 0.5555555555555556,
+          "baseline": 0.5,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "btts:0:homeForm=none&awayForm=none",
+        "target": "btts",
+        "targetLabel": "BTTS",
+        "class": 0,
+        "className": "GG",
+        "condition": {
+          "homeForm": "none",
+          "awayForm": "none"
+        },
+        "description": "homeForm=none & awayForm=none → BTTS=GG",
+        "n": 26,
+        "baseline": 0.3333333333333333,
+        "observed": 0.38461538461538464,
+        "diff": 0.05128205128205132,
+        "lift": 1.153846153846154,
+        "ci": [
+          0.22428359511834428,
+          0.5746547996057992
+        ],
+        "p": 0.5790996835135258,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 8,
+          "observed": 0.375,
+          "baseline": 0.3333333333333333,
+          "sameDirection": true
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "btts:0:homeForm=none&awayOver=none",
+        "target": "btts",
+        "targetLabel": "BTTS",
+        "class": 0,
+        "className": "GG",
+        "condition": {
+          "homeForm": "none",
+          "awayOver": "none"
+        },
+        "description": "homeForm=none & awayOver=none → BTTS=GG",
+        "n": 26,
+        "baseline": 0.3333333333333333,
+        "observed": 0.38461538461538464,
+        "diff": 0.05128205128205132,
+        "lift": 1.153846153846154,
+        "ci": [
+          0.22428359511834428,
+          0.5746547996057992
+        ],
+        "p": 0.5790996835135258,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 8,
+          "observed": 0.375,
+          "baseline": 0.3333333333333333,
+          "sameDirection": true
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "btts:0:awayForm=none&homeOver=none",
+        "target": "btts",
+        "targetLabel": "BTTS",
+        "class": 0,
+        "className": "GG",
+        "condition": {
+          "awayForm": "none",
+          "homeOver": "none"
+        },
+        "description": "awayForm=none & homeOver=none → BTTS=GG",
+        "n": 26,
+        "baseline": 0.3333333333333333,
+        "observed": 0.38461538461538464,
+        "diff": 0.05128205128205132,
+        "lift": 1.153846153846154,
+        "ci": [
+          0.22428359511834428,
+          0.5746547996057992
+        ],
+        "p": 0.5790996835135258,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 8,
+          "observed": 0.375,
+          "baseline": 0.3333333333333333,
+          "sameDirection": true
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "btts:0:homeOver=none&awayOver=none",
+        "target": "btts",
+        "targetLabel": "BTTS",
+        "class": 0,
+        "className": "GG",
+        "condition": {
+          "homeOver": "none",
+          "awayOver": "none"
+        },
+        "description": "homeOver=none & awayOver=none → BTTS=GG",
+        "n": 26,
+        "baseline": 0.3333333333333333,
+        "observed": 0.38461538461538464,
+        "diff": 0.05128205128205132,
+        "lift": 1.153846153846154,
+        "ci": [
+          0.22428359511834428,
+          0.5746547996057992
+        ],
+        "p": 0.5790996835135258,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 8,
+          "observed": 0.375,
+          "baseline": 0.3333333333333333,
+          "sameDirection": true
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "btts:1:homeForm=none&awayForm=none",
+        "target": "btts",
+        "targetLabel": "BTTS",
+        "class": 1,
+        "className": "NG",
+        "condition": {
+          "homeForm": "none",
+          "awayForm": "none"
+        },
+        "description": "homeForm=none & awayForm=none → BTTS=NG",
+        "n": 26,
+        "baseline": 0.6666666666666666,
+        "observed": 0.6153846153846154,
+        "diff": -0.05128205128205121,
+        "lift": 0.9230769230769231,
+        "ci": [
+          0.42534520039420076,
+          0.7757164048816557
+        ],
+        "p": 0.5790996835135265,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 8,
+          "observed": 0.625,
+          "baseline": 0.6666666666666666,
+          "sameDirection": true
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "btts:1:homeForm=none&awayOver=none",
+        "target": "btts",
+        "targetLabel": "BTTS",
+        "class": 1,
+        "className": "NG",
+        "condition": {
+          "homeForm": "none",
+          "awayOver": "none"
+        },
+        "description": "homeForm=none & awayOver=none → BTTS=NG",
+        "n": 26,
+        "baseline": 0.6666666666666666,
+        "observed": 0.6153846153846154,
+        "diff": -0.05128205128205121,
+        "lift": 0.9230769230769231,
+        "ci": [
+          0.42534520039420076,
+          0.7757164048816557
+        ],
+        "p": 0.5790996835135265,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 8,
+          "observed": 0.625,
+          "baseline": 0.6666666666666666,
+          "sameDirection": true
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "btts:1:awayForm=none&homeOver=none",
+        "target": "btts",
+        "targetLabel": "BTTS",
+        "class": 1,
+        "className": "NG",
+        "condition": {
+          "awayForm": "none",
+          "homeOver": "none"
+        },
+        "description": "awayForm=none & homeOver=none → BTTS=NG",
+        "n": 26,
+        "baseline": 0.6666666666666666,
+        "observed": 0.6153846153846154,
+        "diff": -0.05128205128205121,
+        "lift": 0.9230769230769231,
+        "ci": [
+          0.42534520039420076,
+          0.7757164048816557
+        ],
+        "p": 0.5790996835135265,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 8,
+          "observed": 0.625,
+          "baseline": 0.6666666666666666,
+          "sameDirection": true
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "btts:1:homeOver=none&awayOver=none",
+        "target": "btts",
+        "targetLabel": "BTTS",
+        "class": 1,
+        "className": "NG",
+        "condition": {
+          "homeOver": "none",
+          "awayOver": "none"
+        },
+        "description": "homeOver=none & awayOver=none → BTTS=NG",
+        "n": 26,
+        "baseline": 0.6666666666666666,
+        "observed": 0.6153846153846154,
+        "diff": -0.05128205128205121,
+        "lift": 0.9230769230769231,
+        "ci": [
+          0.42534520039420076,
+          0.7757164048816557
+        ],
+        "p": 0.5790996835135265,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 8,
+          "observed": 0.625,
+          "baseline": 0.6666666666666666,
+          "sameDirection": true
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "oneX2:0:homeForm=none&awayForm=none",
+        "target": "oneX2",
+        "targetLabel": "1X2",
+        "class": 0,
+        "className": "H",
+        "condition": {
+          "homeForm": "none",
+          "awayForm": "none"
+        },
+        "description": "homeForm=none & awayForm=none → 1X2=H",
+        "n": 26,
+        "baseline": 0.5,
+        "observed": 0.46153846153846156,
+        "diff": -0.038461538461538436,
+        "lift": 0.9230769230769231,
+        "ci": [
+          0.28755582695234905,
+          0.6454236379556988
+        ],
+        "p": 0.6948867071388807,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 8,
+          "observed": 0.625,
+          "baseline": 0.5,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "oneX2:0:homeForm=none&awayOver=none",
+        "target": "oneX2",
+        "targetLabel": "1X2",
+        "class": 0,
+        "className": "H",
+        "condition": {
+          "homeForm": "none",
+          "awayOver": "none"
+        },
+        "description": "homeForm=none & awayOver=none → 1X2=H",
+        "n": 26,
+        "baseline": 0.5,
+        "observed": 0.46153846153846156,
+        "diff": -0.038461538461538436,
+        "lift": 0.9230769230769231,
+        "ci": [
+          0.28755582695234905,
+          0.6454236379556988
+        ],
+        "p": 0.6948867071388807,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 8,
+          "observed": 0.625,
+          "baseline": 0.5,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "oneX2:0:awayForm=none&homeOver=none",
+        "target": "oneX2",
+        "targetLabel": "1X2",
+        "class": 0,
+        "className": "H",
+        "condition": {
+          "awayForm": "none",
+          "homeOver": "none"
+        },
+        "description": "awayForm=none & homeOver=none → 1X2=H",
+        "n": 26,
+        "baseline": 0.5,
+        "observed": 0.46153846153846156,
+        "diff": -0.038461538461538436,
+        "lift": 0.9230769230769231,
+        "ci": [
+          0.28755582695234905,
+          0.6454236379556988
+        ],
+        "p": 0.6948867071388807,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 8,
+          "observed": 0.625,
+          "baseline": 0.5,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "oneX2:0:homeOver=none&awayOver=none",
+        "target": "oneX2",
+        "targetLabel": "1X2",
+        "class": 0,
+        "className": "H",
+        "condition": {
+          "homeOver": "none",
+          "awayOver": "none"
+        },
+        "description": "homeOver=none & awayOver=none → 1X2=H",
+        "n": 26,
+        "baseline": 0.5,
+        "observed": 0.46153846153846156,
+        "diff": -0.038461538461538436,
+        "lift": 0.9230769230769231,
+        "ci": [
+          0.28755582695234905,
+          0.6454236379556988
+        ],
+        "p": 0.6948867071388807,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 8,
+          "observed": 0.625,
+          "baseline": 0.5,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "oneX2:2:homeForm=none",
+        "target": "oneX2",
+        "targetLabel": "1X2",
+        "class": 2,
+        "className": "A",
+        "condition": {
+          "homeForm": "none"
+        },
+        "description": "homeForm=none → 1X2=A",
+        "n": 27,
+        "baseline": 0.3333333333333333,
+        "observed": 0.37037037037037035,
+        "diff": 0.037037037037037035,
+        "lift": 1.1111111111111112,
+        "ci": [
+          0.21532287067936856,
+          0.5577109537655369
+        ],
+        "p": 0.6830914897867655,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 9,
+          "observed": 0.3333333333333333,
+          "baseline": 0.3333333333333333,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "oneX2:2:homeOver=none",
+        "target": "oneX2",
+        "targetLabel": "1X2",
+        "class": 2,
+        "className": "A",
+        "condition": {
+          "homeOver": "none"
+        },
+        "description": "homeOver=none → 1X2=A",
+        "n": 27,
+        "baseline": 0.3333333333333333,
+        "observed": 0.37037037037037035,
+        "diff": 0.037037037037037035,
+        "lift": 1.1111111111111112,
+        "ci": [
+          0.21532287067936856,
+          0.5577109537655369
+        ],
+        "p": 0.6830914897867655,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 9,
+          "observed": 0.3333333333333333,
+          "baseline": 0.3333333333333333,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "oneX2:2:prevTotal=none&homeForm=none",
+        "target": "oneX2",
+        "targetLabel": "1X2",
+        "class": 2,
+        "className": "A",
+        "condition": {
+          "prevTotal": "none",
+          "homeForm": "none"
+        },
+        "description": "prevTotal=none & homeForm=none → 1X2=A",
+        "n": 27,
+        "baseline": 0.3333333333333333,
+        "observed": 0.37037037037037035,
+        "diff": 0.037037037037037035,
+        "lift": 1.1111111111111112,
+        "ci": [
+          0.21532287067936856,
+          0.5577109537655369
+        ],
+        "p": 0.6830914897867655,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 9,
+          "observed": 0.3333333333333333,
+          "baseline": 0.3333333333333333,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "oneX2:2:prevTotal=none&homeOver=none",
+        "target": "oneX2",
+        "targetLabel": "1X2",
+        "class": 2,
+        "className": "A",
+        "condition": {
+          "prevTotal": "none",
+          "homeOver": "none"
+        },
+        "description": "prevTotal=none & homeOver=none → 1X2=A",
+        "n": 27,
+        "baseline": 0.3333333333333333,
+        "observed": 0.37037037037037035,
+        "diff": 0.037037037037037035,
+        "lift": 1.1111111111111112,
+        "ci": [
+          0.21532287067936856,
+          0.5577109537655369
+        ],
+        "p": 0.6830914897867655,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 9,
+          "observed": 0.3333333333333333,
+          "baseline": 0.3333333333333333,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "oneX2:2:homeForm=none&homeOver=none",
+        "target": "oneX2",
+        "targetLabel": "1X2",
+        "class": 2,
+        "className": "A",
+        "condition": {
+          "homeForm": "none",
+          "homeOver": "none"
+        },
+        "description": "homeForm=none & homeOver=none → 1X2=A",
+        "n": 27,
+        "baseline": 0.3333333333333333,
+        "observed": 0.37037037037037035,
+        "diff": 0.037037037037037035,
+        "lift": 1.1111111111111112,
+        "ci": [
+          0.21532287067936856,
+          0.5577109537655369
+        ],
+        "p": 0.6830914897867655,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 9,
+          "observed": 0.3333333333333333,
+          "baseline": 0.3333333333333333,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "btts:0:homeForm=none",
+        "target": "btts",
+        "targetLabel": "BTTS",
+        "class": 0,
+        "className": "GG",
+        "condition": {
+          "homeForm": "none"
+        },
+        "description": "homeForm=none → BTTS=GG",
+        "n": 27,
+        "baseline": 0.3333333333333333,
+        "observed": 0.37037037037037035,
+        "diff": 0.037037037037037035,
+        "lift": 1.1111111111111112,
+        "ci": [
+          0.21532287067936856,
+          0.5577109537655369
+        ],
+        "p": 0.6830914897867655,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 9,
+          "observed": 0.3333333333333333,
+          "baseline": 0.3333333333333333,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "btts:0:homeOver=none",
+        "target": "btts",
+        "targetLabel": "BTTS",
+        "class": 0,
+        "className": "GG",
+        "condition": {
+          "homeOver": "none"
+        },
+        "description": "homeOver=none → BTTS=GG",
+        "n": 27,
+        "baseline": 0.3333333333333333,
+        "observed": 0.37037037037037035,
+        "diff": 0.037037037037037035,
+        "lift": 1.1111111111111112,
+        "ci": [
+          0.21532287067936856,
+          0.5577109537655369
+        ],
+        "p": 0.6830914897867655,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 9,
+          "observed": 0.3333333333333333,
+          "baseline": 0.3333333333333333,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "btts:0:prevTotal=none&homeForm=none",
+        "target": "btts",
+        "targetLabel": "BTTS",
+        "class": 0,
+        "className": "GG",
+        "condition": {
+          "prevTotal": "none",
+          "homeForm": "none"
+        },
+        "description": "prevTotal=none & homeForm=none → BTTS=GG",
+        "n": 27,
+        "baseline": 0.3333333333333333,
+        "observed": 0.37037037037037035,
+        "diff": 0.037037037037037035,
+        "lift": 1.1111111111111112,
+        "ci": [
+          0.21532287067936856,
+          0.5577109537655369
+        ],
+        "p": 0.6830914897867655,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 9,
+          "observed": 0.3333333333333333,
+          "baseline": 0.3333333333333333,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "btts:0:prevTotal=none&homeOver=none",
+        "target": "btts",
+        "targetLabel": "BTTS",
+        "class": 0,
+        "className": "GG",
+        "condition": {
+          "prevTotal": "none",
+          "homeOver": "none"
+        },
+        "description": "prevTotal=none & homeOver=none → BTTS=GG",
+        "n": 27,
+        "baseline": 0.3333333333333333,
+        "observed": 0.37037037037037035,
+        "diff": 0.037037037037037035,
+        "lift": 1.1111111111111112,
+        "ci": [
+          0.21532287067936856,
+          0.5577109537655369
+        ],
+        "p": 0.6830914897867655,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 9,
+          "observed": 0.3333333333333333,
+          "baseline": 0.3333333333333333,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "btts:0:homeForm=none&homeOver=none",
+        "target": "btts",
+        "targetLabel": "BTTS",
+        "class": 0,
+        "className": "GG",
+        "condition": {
+          "homeForm": "none",
+          "homeOver": "none"
+        },
+        "description": "homeForm=none & homeOver=none → BTTS=GG",
+        "n": 27,
+        "baseline": 0.3333333333333333,
+        "observed": 0.37037037037037035,
+        "diff": 0.037037037037037035,
+        "lift": 1.1111111111111112,
+        "ci": [
+          0.21532287067936856,
+          0.5577109537655369
+        ],
+        "p": 0.6830914897867655,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 9,
+          "observed": 0.3333333333333333,
+          "baseline": 0.3333333333333333,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "btts:1:homeForm=none",
+        "target": "btts",
+        "targetLabel": "BTTS",
+        "class": 1,
+        "className": "NG",
+        "condition": {
+          "homeForm": "none"
+        },
+        "description": "homeForm=none → BTTS=NG",
+        "n": 27,
+        "baseline": 0.6666666666666666,
+        "observed": 0.6296296296296297,
+        "diff": -0.03703703703703698,
+        "lift": 0.9444444444444445,
+        "ci": [
+          0.442289046234463,
+          0.7846771293206314
+        ],
+        "p": 0.6830914897867661,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 9,
+          "observed": 0.6666666666666666,
+          "baseline": 0.6666666666666666,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "btts:1:homeOver=none",
+        "target": "btts",
+        "targetLabel": "BTTS",
+        "class": 1,
+        "className": "NG",
+        "condition": {
+          "homeOver": "none"
+        },
+        "description": "homeOver=none → BTTS=NG",
+        "n": 27,
+        "baseline": 0.6666666666666666,
+        "observed": 0.6296296296296297,
+        "diff": -0.03703703703703698,
+        "lift": 0.9444444444444445,
+        "ci": [
+          0.442289046234463,
+          0.7846771293206314
+        ],
+        "p": 0.6830914897867661,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 9,
+          "observed": 0.6666666666666666,
+          "baseline": 0.6666666666666666,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      },
+      {
+        "id": "btts:1:prevTotal=none&homeForm=none",
+        "target": "btts",
+        "targetLabel": "BTTS",
+        "class": 1,
+        "className": "NG",
+        "condition": {
+          "prevTotal": "none",
+          "homeForm": "none"
+        },
+        "description": "prevTotal=none & homeForm=none → BTTS=NG",
+        "n": 27,
+        "baseline": 0.6666666666666666,
+        "observed": 0.6296296296296297,
+        "diff": -0.03703703703703698,
+        "lift": 0.9444444444444445,
+        "ci": [
+          0.442289046234463,
+          0.7846771293206314
+        ],
+        "p": 0.6830914897867661,
+        "q": 0.9999999989999999,
+        "oos": {
+          "n": 9,
+          "observed": 0.6666666666666666,
+          "baseline": 0.6666666666666666,
+          "sameDirection": false
+        },
+        "status": "not_supported"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "round": "6:355434",
+      "comp": 4,
+      "trainN": 10,
+      "testStart": 1795518072000,
+      "trainCutoff": 1795516992000,
+      "leakage": false
+    },
+    {
+      "round": "3:441481",
+      "comp": 9,
+      "trainN": 12,
+      "testStart": 1795518192000,
+      "trainCutoff": 1795517112000,
+      "leakage": false
+    },
+    {
+      "round": "3:441481",
+      "comp": 1,
+      "trainN": 10,
+      "testStart": 1795518192000,
+      "trainCutoff": 1795517112000,
+      "leakage": false
+    },
+    {
+      "round": "7:152799",
+      "comp": 8,
+      "trainN": 10,
+      "testStart": 1795518267000,
+      "trainCutoff": 1795517007000,
+      "leakage": false
+    },
+    {
+      "round": "4:441480",
+      "comp": 2,
+      "trainN": 10,
+      "testStart": 1795518312000,
+      "trainCutoff": 1795516872000,
+      "leakage": false
+    }
+  ],
+  "warnings": [
+    "Small specialist sample (52 matches); enable/disable decisions are provisional.",
+    "Sequence model disabled: it did not beat the Stage 5 ensemble after paired correction or had insufficient usable state.",
+    "Pattern model disabled: no validated rules or no out-of-sample improvement over the Stage 5 ensemble."
+  ]
+}

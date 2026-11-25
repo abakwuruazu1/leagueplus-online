@@ -1,0 +1,1072 @@
+{
+  "meta": {
+    "version": "stage4-research-v1",
+    "generatedAt": 1795526410222,
+    "matches": 104,
+    "rounds": 10,
+    "competitions": 5,
+    "dateRange": {
+      "from": 1795516872000,
+      "to": 1795518312000
+    },
+    "byComp": [
+      {
+        "comp": 2,
+        "matches": 20,
+        "rounds": 2
+      },
+      {
+        "comp": 4,
+        "matches": 20,
+        "rounds": 2
+      },
+      {
+        "comp": 8,
+        "matches": 20,
+        "rounds": 2
+      },
+      {
+        "comp": 9,
+        "matches": 24,
+        "rounds": 2
+      },
+      {
+        "comp": 1,
+        "matches": 20,
+        "rounds": 2
+      }
+    ],
+    "options": {
+      "minMatches": 100,
+      "minRounds": 30,
+      "minTeams": 8,
+      "minPatternN": 30,
+      "permutations": 499,
+      "seed": 20261124
+    },
+    "warnings": []
+  },
+  "hypotheses": {
+    "H1": {
+      "status": "insufficient",
+      "kind": "descriptive",
+      "n": 2,
+      "effect": null,
+      "ci": null,
+      "p": null,
+      "q": null,
+      "detail": [
+        {
+          "id": "H1-2",
+          "hypothesis": "H1",
+          "name": "Ljung-Box round goals — 2",
+          "n": 2,
+          "stat": null,
+          "effect": null,
+          "p": null,
+          "minN": 30,
+          "effectAbs": 0.15,
+          "detail": {
+            "comp": 2,
+            "reason": "insufficient rounds"
+          }
+        },
+        {
+          "id": "H1-4",
+          "hypothesis": "H1",
+          "name": "Ljung-Box round goals — 4",
+          "n": 2,
+          "stat": null,
+          "effect": null,
+          "p": null,
+          "minN": 30,
+          "effectAbs": 0.15,
+          "detail": {
+            "comp": 4,
+            "reason": "insufficient rounds"
+          }
+        },
+        {
+          "id": "H1-8",
+          "hypothesis": "H1",
+          "name": "Ljung-Box round goals — 8",
+          "n": 2,
+          "stat": null,
+          "effect": null,
+          "p": null,
+          "minN": 30,
+          "effectAbs": 0.15,
+          "detail": {
+            "comp": 8,
+            "reason": "insufficient rounds"
+          }
+        },
+        {
+          "id": "H1-9",
+          "hypothesis": "H1",
+          "name": "Ljung-Box round goals — 9",
+          "n": 2,
+          "stat": null,
+          "effect": null,
+          "p": null,
+          "minN": 30,
+          "effectAbs": 0.15,
+          "detail": {
+            "comp": 9,
+            "reason": "insufficient rounds"
+          }
+        },
+        {
+          "id": "H1-1",
+          "hypothesis": "H1",
+          "name": "Ljung-Box round goals — 1",
+          "n": 2,
+          "stat": null,
+          "effect": null,
+          "p": null,
+          "minN": 30,
+          "effectAbs": 0.15,
+          "detail": {
+            "comp": 1,
+            "reason": "insufficient rounds"
+          }
+        }
+      ]
+    },
+    "H2": {
+      "status": "insufficient",
+      "kind": "predictive",
+      "n": 0,
+      "effect": null,
+      "ci": null,
+      "p": null,
+      "q": null,
+      "detail": [
+        {
+          "id": "H2-2",
+          "hypothesis": "H2",
+          "name": "Team attack persistence — 2",
+          "n": 0,
+          "effect": null,
+          "p": null,
+          "minN": 8,
+          "effectAbs": 0.3,
+          "detail": {
+            "comp": 2,
+            "reason": "insufficient teams"
+          }
+        },
+        {
+          "id": "H2-4",
+          "hypothesis": "H2",
+          "name": "Team attack persistence — 4",
+          "n": 0,
+          "effect": null,
+          "p": null,
+          "minN": 8,
+          "effectAbs": 0.3,
+          "detail": {
+            "comp": 4,
+            "reason": "insufficient teams"
+          }
+        },
+        {
+          "id": "H2-8",
+          "hypothesis": "H2",
+          "name": "Team attack persistence — 8",
+          "n": 0,
+          "effect": null,
+          "p": null,
+          "minN": 8,
+          "effectAbs": 0.3,
+          "detail": {
+            "comp": 8,
+            "reason": "insufficient teams"
+          }
+        },
+        {
+          "id": "H2-9",
+          "hypothesis": "H2",
+          "name": "Team attack persistence — 9",
+          "n": 0,
+          "effect": null,
+          "p": null,
+          "minN": 8,
+          "effectAbs": 0.3,
+          "detail": {
+            "comp": 9,
+            "reason": "insufficient teams"
+          }
+        },
+        {
+          "id": "H2-1",
+          "hypothesis": "H2",
+          "name": "Team attack persistence — 1",
+          "n": 0,
+          "effect": null,
+          "p": null,
+          "minN": 8,
+          "effectAbs": 0.3,
+          "detail": {
+            "comp": 1,
+            "reason": "insufficient teams"
+          }
+        }
+      ]
+    },
+    "H3": {
+      "status": "insufficient",
+      "kind": "descriptive",
+      "n": 104,
+      "effect": null,
+      "ci": null,
+      "p": null,
+      "q": null,
+      "detail": [
+        {
+          "id": "H3-goals",
+          "hypothesis": "H3",
+          "name": "Competition goal distributions",
+          "n": 104,
+          "effect": null,
+          "p": null,
+          "minN": 100,
+          "effectAbs": 0.02,
+          "detail": {
+            "reason": "insufficient competition groups"
+          }
+        }
+      ]
+    },
+    "H4": {
+      "status": "insufficient",
+      "kind": "descriptive",
+      "n": 2,
+      "effect": null,
+      "ci": null,
+      "p": null,
+      "q": null,
+      "detail": [
+        {
+          "id": "H4-2",
+          "hypothesis": "H4",
+          "name": "Round total-goal transitions — 2",
+          "n": 2,
+          "effect": null,
+          "p": null,
+          "minN": 30,
+          "effectAbs": 0.01,
+          "detail": {
+            "comp": 2,
+            "reason": "insufficient rounds"
+          }
+        },
+        {
+          "id": "H4-4",
+          "hypothesis": "H4",
+          "name": "Round total-goal transitions — 4",
+          "n": 2,
+          "effect": null,
+          "p": null,
+          "minN": 30,
+          "effectAbs": 0.01,
+          "detail": {
+            "comp": 4,
+            "reason": "insufficient rounds"
+          }
+        },
+        {
+          "id": "H4-8",
+          "hypothesis": "H4",
+          "name": "Round total-goal transitions — 8",
+          "n": 2,
+          "effect": null,
+          "p": null,
+          "minN": 30,
+          "effectAbs": 0.01,
+          "detail": {
+            "comp": 8,
+            "reason": "insufficient rounds"
+          }
+        },
+        {
+          "id": "H4-9",
+          "hypothesis": "H4",
+          "name": "Round total-goal transitions — 9",
+          "n": 2,
+          "effect": null,
+          "p": null,
+          "minN": 30,
+          "effectAbs": 0.01,
+          "detail": {
+            "comp": 9,
+            "reason": "insufficient rounds"
+          }
+        },
+        {
+          "id": "H4-1",
+          "hypothesis": "H4",
+          "name": "Round total-goal transitions — 1",
+          "n": 2,
+          "effect": null,
+          "p": null,
+          "minN": 30,
+          "effectAbs": 0.01,
+          "detail": {
+            "comp": 1,
+            "reason": "insufficient rounds"
+          }
+        }
+      ]
+    },
+    "H5": {
+      "status": "insufficient",
+      "kind": "descriptive",
+      "n": 2,
+      "effect": null,
+      "ci": null,
+      "p": null,
+      "q": null,
+      "detail": [
+        {
+          "id": "H5-2",
+          "hypothesis": "H5",
+          "name": "Change point round goals — 2",
+          "n": 2,
+          "effect": null,
+          "p": null,
+          "minN": 30,
+          "effectAbs": 0.2,
+          "detail": {
+            "comp": 2,
+            "reason": "insufficient rounds"
+          }
+        },
+        {
+          "id": "H5-4",
+          "hypothesis": "H5",
+          "name": "Change point round goals — 4",
+          "n": 2,
+          "effect": null,
+          "p": null,
+          "minN": 30,
+          "effectAbs": 0.2,
+          "detail": {
+            "comp": 4,
+            "reason": "insufficient rounds"
+          }
+        },
+        {
+          "id": "H5-8",
+          "hypothesis": "H5",
+          "name": "Change point round goals — 8",
+          "n": 2,
+          "effect": null,
+          "p": null,
+          "minN": 30,
+          "effectAbs": 0.2,
+          "detail": {
+            "comp": 8,
+            "reason": "insufficient rounds"
+          }
+        },
+        {
+          "id": "H5-9",
+          "hypothesis": "H5",
+          "name": "Change point round goals — 9",
+          "n": 2,
+          "effect": null,
+          "p": null,
+          "minN": 30,
+          "effectAbs": 0.2,
+          "detail": {
+            "comp": 9,
+            "reason": "insufficient rounds"
+          }
+        },
+        {
+          "id": "H5-1",
+          "hypothesis": "H5",
+          "name": "Change point round goals — 1",
+          "n": 2,
+          "effect": null,
+          "p": null,
+          "minN": 30,
+          "effectAbs": 0.2,
+          "detail": {
+            "comp": 1,
+            "reason": "insufficient rounds"
+          }
+        }
+      ]
+    },
+    "H6": {
+      "status": "supported",
+      "kind": "predictive",
+      "n": 104,
+      "effect": -0.13131056668680788,
+      "ci": [
+        -0.19703013806422948,
+        -0.06879206488270524
+      ],
+      "p": 0.004,
+      "q": 0.01,
+      "best": "Market vs historical frequency",
+      "detail": [
+        {
+          "id": "H6-market",
+          "hypothesis": "H6",
+          "name": "Market vs historical frequency",
+          "n": 104,
+          "stat": -0.13131056668680788,
+          "effect": -0.13131056668680788,
+          "ci": [
+            -0.19703013806422948,
+            -0.06879206488270524
+          ],
+          "p": 0.004,
+          "minN": 100,
+          "effectOk": true,
+          "detail": {
+            "brier": {
+              "diff": -0.13131056668680788,
+              "low": -0.19703013806422948,
+              "high": -0.06879206488270524,
+              "p": 0.004,
+              "n": 104,
+              "bootstrap": 499
+            },
+            "logLoss": {
+              "diff": -0.2821588185505424,
+              "low": -0.41538263612369675,
+              "high": -0.16196595506719028,
+              "p": 0.004,
+              "n": 104,
+              "bootstrap": 499
+            },
+            "marketBrier": 0.5328896683679311,
+            "baseBrier": 0.6642002350547386
+          },
+          "q": 0.01
+        }
+      ]
+    },
+    "H7": {
+      "status": "not_supported",
+      "kind": "predictive",
+      "n": 42,
+      "effect": 0,
+      "ci": [
+        0,
+        0
+      ],
+      "p": 1,
+      "q": 1,
+      "best": "Market + history blend",
+      "detail": [
+        {
+          "id": "H7-blend",
+          "hypothesis": "H7",
+          "name": "Market + history blend",
+          "n": 42,
+          "stat": 0,
+          "effect": 0,
+          "ci": [
+            0,
+            0
+          ],
+          "p": 1,
+          "minN": 30,
+          "effectOk": false,
+          "detail": {
+            "weight": 1,
+            "trainN": 62,
+            "testN": 42,
+            "trainLogLoss": 1.2564939469763052,
+            "blendVsMarket": {
+              "diff": 0,
+              "low": 0,
+              "high": 0,
+              "p": 1,
+              "n": 42,
+              "bootstrap": 499
+            }
+          },
+          "q": 1
+        }
+      ]
+    },
+    "H8": {
+      "status": "supported",
+      "kind": "descriptive",
+      "n": 35,
+      "effect": -0.24085384463394474,
+      "ci": [
+        -0.35265031054734136,
+        -0.11950220399265679
+      ],
+      "p": 0.004,
+      "q": 0.01,
+      "best": "Market predictability — confident",
+      "detail": [
+        {
+          "id": "H8-uncertain",
+          "hypothesis": "H8",
+          "name": "Market predictability — uncertain",
+          "n": 34,
+          "stat": -0.028436593547464736,
+          "effect": -0.028436593547464736,
+          "ci": [
+            -0.117410669248805,
+            0.04402252077444197
+          ],
+          "p": 0.468,
+          "minN": 30,
+          "effectOk": true,
+          "detail": {
+            "stratum": "uncertain",
+            "marketBrier": 0.6365889324885613,
+            "baseBrier": 0.665025526036026
+          },
+          "q": 0.5850000000000001
+        },
+        {
+          "id": "H8-middle",
+          "hypothesis": "H8",
+          "name": "Market predictability — middle",
+          "n": 35,
+          "stat": -0.12170200550360438,
+          "effect": -0.12170200550360438,
+          "ci": [
+            -0.2371431671304818,
+            -0.012792754319540266
+          ],
+          "p": 0.036,
+          "minN": 30,
+          "effectOk": true,
+          "detail": {
+            "stratum": "middle",
+            "marketBrier": 0.5842753608662182,
+            "baseBrier": 0.7059773663698228
+          },
+          "q": 0.06
+        },
+        {
+          "id": "H8-confident",
+          "hypothesis": "H8",
+          "name": "Market predictability — confident",
+          "n": 35,
+          "stat": -0.24085384463394474,
+          "effect": -0.24085384463394474,
+          "ci": [
+            -0.35265031054734136,
+            -0.11950220399265679
+          ],
+          "p": 0.004,
+          "minN": 30,
+          "effectOk": true,
+          "detail": {
+            "stratum": "confident",
+            "marketBrier": 0.3807675478667453,
+            "baseBrier": 0.62162139250069
+          },
+          "q": 0.01
+        }
+      ]
+    }
+  },
+  "tests": [
+    {
+      "id": "H1-2",
+      "hypothesis": "H1",
+      "name": "Ljung-Box round goals — 2",
+      "n": 2,
+      "stat": null,
+      "effect": null,
+      "p": null,
+      "minN": 30,
+      "effectAbs": 0.15,
+      "detail": {
+        "comp": 2,
+        "reason": "insufficient rounds"
+      }
+    },
+    {
+      "id": "H1-4",
+      "hypothesis": "H1",
+      "name": "Ljung-Box round goals — 4",
+      "n": 2,
+      "stat": null,
+      "effect": null,
+      "p": null,
+      "minN": 30,
+      "effectAbs": 0.15,
+      "detail": {
+        "comp": 4,
+        "reason": "insufficient rounds"
+      }
+    },
+    {
+      "id": "H1-8",
+      "hypothesis": "H1",
+      "name": "Ljung-Box round goals — 8",
+      "n": 2,
+      "stat": null,
+      "effect": null,
+      "p": null,
+      "minN": 30,
+      "effectAbs": 0.15,
+      "detail": {
+        "comp": 8,
+        "reason": "insufficient rounds"
+      }
+    },
+    {
+      "id": "H1-9",
+      "hypothesis": "H1",
+      "name": "Ljung-Box round goals — 9",
+      "n": 2,
+      "stat": null,
+      "effect": null,
+      "p": null,
+      "minN": 30,
+      "effectAbs": 0.15,
+      "detail": {
+        "comp": 9,
+        "reason": "insufficient rounds"
+      }
+    },
+    {
+      "id": "H1-1",
+      "hypothesis": "H1",
+      "name": "Ljung-Box round goals — 1",
+      "n": 2,
+      "stat": null,
+      "effect": null,
+      "p": null,
+      "minN": 30,
+      "effectAbs": 0.15,
+      "detail": {
+        "comp": 1,
+        "reason": "insufficient rounds"
+      }
+    },
+    {
+      "id": "H2-2",
+      "hypothesis": "H2",
+      "name": "Team attack persistence — 2",
+      "n": 0,
+      "effect": null,
+      "p": null,
+      "minN": 8,
+      "effectAbs": 0.3,
+      "detail": {
+        "comp": 2,
+        "reason": "insufficient teams"
+      }
+    },
+    {
+      "id": "H2-4",
+      "hypothesis": "H2",
+      "name": "Team attack persistence — 4",
+      "n": 0,
+      "effect": null,
+      "p": null,
+      "minN": 8,
+      "effectAbs": 0.3,
+      "detail": {
+        "comp": 4,
+        "reason": "insufficient teams"
+      }
+    },
+    {
+      "id": "H2-8",
+      "hypothesis": "H2",
+      "name": "Team attack persistence — 8",
+      "n": 0,
+      "effect": null,
+      "p": null,
+      "minN": 8,
+      "effectAbs": 0.3,
+      "detail": {
+        "comp": 8,
+        "reason": "insufficient teams"
+      }
+    },
+    {
+      "id": "H2-9",
+      "hypothesis": "H2",
+      "name": "Team attack persistence — 9",
+      "n": 0,
+      "effect": null,
+      "p": null,
+      "minN": 8,
+      "effectAbs": 0.3,
+      "detail": {
+        "comp": 9,
+        "reason": "insufficient teams"
+      }
+    },
+    {
+      "id": "H2-1",
+      "hypothesis": "H2",
+      "name": "Team attack persistence — 1",
+      "n": 0,
+      "effect": null,
+      "p": null,
+      "minN": 8,
+      "effectAbs": 0.3,
+      "detail": {
+        "comp": 1,
+        "reason": "insufficient teams"
+      }
+    },
+    {
+      "id": "H3-goals",
+      "hypothesis": "H3",
+      "name": "Competition goal distributions",
+      "n": 104,
+      "effect": null,
+      "p": null,
+      "minN": 100,
+      "effectAbs": 0.02,
+      "detail": {
+        "reason": "insufficient competition groups"
+      }
+    },
+    {
+      "id": "H4-2",
+      "hypothesis": "H4",
+      "name": "Round total-goal transitions — 2",
+      "n": 2,
+      "effect": null,
+      "p": null,
+      "minN": 30,
+      "effectAbs": 0.01,
+      "detail": {
+        "comp": 2,
+        "reason": "insufficient rounds"
+      }
+    },
+    {
+      "id": "H4-4",
+      "hypothesis": "H4",
+      "name": "Round total-goal transitions — 4",
+      "n": 2,
+      "effect": null,
+      "p": null,
+      "minN": 30,
+      "effectAbs": 0.01,
+      "detail": {
+        "comp": 4,
+        "reason": "insufficient rounds"
+      }
+    },
+    {
+      "id": "H4-8",
+      "hypothesis": "H4",
+      "name": "Round total-goal transitions — 8",
+      "n": 2,
+      "effect": null,
+      "p": null,
+      "minN": 30,
+      "effectAbs": 0.01,
+      "detail": {
+        "comp": 8,
+        "reason": "insufficient rounds"
+      }
+    },
+    {
+      "id": "H4-9",
+      "hypothesis": "H4",
+      "name": "Round total-goal transitions — 9",
+      "n": 2,
+      "effect": null,
+      "p": null,
+      "minN": 30,
+      "effectAbs": 0.01,
+      "detail": {
+        "comp": 9,
+        "reason": "insufficient rounds"
+      }
+    },
+    {
+      "id": "H4-1",
+      "hypothesis": "H4",
+      "name": "Round total-goal transitions — 1",
+      "n": 2,
+      "effect": null,
+      "p": null,
+      "minN": 30,
+      "effectAbs": 0.01,
+      "detail": {
+        "comp": 1,
+        "reason": "insufficient rounds"
+      }
+    },
+    {
+      "id": "H5-2",
+      "hypothesis": "H5",
+      "name": "Change point round goals — 2",
+      "n": 2,
+      "effect": null,
+      "p": null,
+      "minN": 30,
+      "effectAbs": 0.2,
+      "detail": {
+        "comp": 2,
+        "reason": "insufficient rounds"
+      }
+    },
+    {
+      "id": "H5-4",
+      "hypothesis": "H5",
+      "name": "Change point round goals — 4",
+      "n": 2,
+      "effect": null,
+      "p": null,
+      "minN": 30,
+      "effectAbs": 0.2,
+      "detail": {
+        "comp": 4,
+        "reason": "insufficient rounds"
+      }
+    },
+    {
+      "id": "H5-8",
+      "hypothesis": "H5",
+      "name": "Change point round goals — 8",
+      "n": 2,
+      "effect": null,
+      "p": null,
+      "minN": 30,
+      "effectAbs": 0.2,
+      "detail": {
+        "comp": 8,
+        "reason": "insufficient rounds"
+      }
+    },
+    {
+      "id": "H5-9",
+      "hypothesis": "H5",
+      "name": "Change point round goals — 9",
+      "n": 2,
+      "effect": null,
+      "p": null,
+      "minN": 30,
+      "effectAbs": 0.2,
+      "detail": {
+        "comp": 9,
+        "reason": "insufficient rounds"
+      }
+    },
+    {
+      "id": "H5-1",
+      "hypothesis": "H5",
+      "name": "Change point round goals — 1",
+      "n": 2,
+      "effect": null,
+      "p": null,
+      "minN": 30,
+      "effectAbs": 0.2,
+      "detail": {
+        "comp": 1,
+        "reason": "insufficient rounds"
+      }
+    },
+    {
+      "id": "H6-market",
+      "hypothesis": "H6",
+      "name": "Market vs historical frequency",
+      "n": 104,
+      "stat": -0.13131056668680788,
+      "effect": -0.13131056668680788,
+      "ci": [
+        -0.19703013806422948,
+        -0.06879206488270524
+      ],
+      "p": 0.004,
+      "minN": 100,
+      "effectOk": true,
+      "detail": {
+        "brier": {
+          "diff": -0.13131056668680788,
+          "low": -0.19703013806422948,
+          "high": -0.06879206488270524,
+          "p": 0.004,
+          "n": 104,
+          "bootstrap": 499
+        },
+        "logLoss": {
+          "diff": -0.2821588185505424,
+          "low": -0.41538263612369675,
+          "high": -0.16196595506719028,
+          "p": 0.004,
+          "n": 104,
+          "bootstrap": 499
+        },
+        "marketBrier": 0.5328896683679311,
+        "baseBrier": 0.6642002350547386
+      },
+      "q": 0.01
+    },
+    {
+      "id": "H7-blend",
+      "hypothesis": "H7",
+      "name": "Market + history blend",
+      "n": 42,
+      "stat": 0,
+      "effect": 0,
+      "ci": [
+        0,
+        0
+      ],
+      "p": 1,
+      "minN": 30,
+      "effectOk": false,
+      "detail": {
+        "weight": 1,
+        "trainN": 62,
+        "testN": 42,
+        "trainLogLoss": 1.2564939469763052,
+        "blendVsMarket": {
+          "diff": 0,
+          "low": 0,
+          "high": 0,
+          "p": 1,
+          "n": 42,
+          "bootstrap": 499
+        }
+      },
+      "q": 1
+    },
+    {
+      "id": "H8-uncertain",
+      "hypothesis": "H8",
+      "name": "Market predictability — uncertain",
+      "n": 34,
+      "stat": -0.028436593547464736,
+      "effect": -0.028436593547464736,
+      "ci": [
+        -0.117410669248805,
+        0.04402252077444197
+      ],
+      "p": 0.468,
+      "minN": 30,
+      "effectOk": true,
+      "detail": {
+        "stratum": "uncertain",
+        "marketBrier": 0.6365889324885613,
+        "baseBrier": 0.665025526036026
+      },
+      "q": 0.5850000000000001
+    },
+    {
+      "id": "H8-middle",
+      "hypothesis": "H8",
+      "name": "Market predictability — middle",
+      "n": 35,
+      "stat": -0.12170200550360438,
+      "effect": -0.12170200550360438,
+      "ci": [
+        -0.2371431671304818,
+        -0.012792754319540266
+      ],
+      "p": 0.036,
+      "minN": 30,
+      "effectOk": true,
+      "detail": {
+        "stratum": "middle",
+        "marketBrier": 0.5842753608662182,
+        "baseBrier": 0.7059773663698228
+      },
+      "q": 0.06
+    },
+    {
+      "id": "H8-confident",
+      "hypothesis": "H8",
+      "name": "Market predictability — confident",
+      "n": 35,
+      "stat": -0.24085384463394474,
+      "effect": -0.24085384463394474,
+      "ci": [
+        -0.35265031054734136,
+        -0.11950220399265679
+      ],
+      "p": 0.004,
+      "minN": 30,
+      "effectOk": true,
+      "detail": {
+        "stratum": "confident",
+        "marketBrier": 0.3807675478667453,
+        "baseBrier": 0.62162139250069
+      },
+      "q": 0.01
+    }
+  ],
+  "patterns": [],
+  "information": {
+    "1": {
+      "matches": 20,
+      "rounds": 2,
+      "outcomeEntropyBits": 1.5812908992306927,
+      "totalGoalEntropyBits": 2.5037016960573486,
+      "roundTransitionMiBits": null,
+      "roundTransitionConditionalEntropyBits": 0,
+      "roundTransitionMi": null
+    },
+    "2": {
+      "matches": 20,
+      "rounds": 2,
+      "outcomeEntropyBits": 1.5709505944546687,
+      "totalGoalEntropyBits": 2.308694969562842,
+      "roundTransitionMiBits": null,
+      "roundTransitionConditionalEntropyBits": 0,
+      "roundTransitionMi": null
+    },
+    "4": {
+      "matches": 20,
+      "rounds": 2,
+      "outcomeEntropyBits": 1.5394910703001345,
+      "totalGoalEntropyBits": 2.283383098229013,
+      "roundTransitionMiBits": null,
+      "roundTransitionConditionalEntropyBits": 0,
+      "roundTransitionMi": null
+    },
+    "8": {
+      "matches": 20,
+      "rounds": 2,
+      "outcomeEntropyBits": 1.1812908992306925,
+      "totalGoalEntropyBits": 2.5464393446710156,
+      "roundTransitionMiBits": null,
+      "roundTransitionConditionalEntropyBits": 0,
+      "roundTransitionMi": null
+    },
+    "9": {
+      "matches": 24,
+      "rounds": 2,
+      "outcomeEntropyBits": 1.2987949406953985,
+      "totalGoalEntropyBits": 2.1379185026711327,
+      "roundTransitionMiBits": null,
+      "roundTransitionConditionalEntropyBits": 0,
+      "roundTransitionMi": null
+    },
+    "all": {
+      "matches": 104,
+      "rounds": 10,
+      "outcomeEntropyBits": 1.502917263351543,
+      "totalGoalEntropyBits": 2.5186472133439533,
+      "roundTransitionMiBits": 0,
+      "roundTransitionConditionalEntropyBits": 0,
+      "roundTransitionMi": null
+    }
+  },
+  "limitations": [
+    "Observational data only; no causal claims.",
+    "The sample is recorded in real time and may contain gaps; gap warnings from the capture layer still apply.",
+    "Odds were static in the live probe; this analysis does not assume line movement.",
+    "Multiple testing is controlled with Benjamini–Hochberg q-values; exploratory findings are not trading rules.",
+    "Team persistence is split-half, not a full generative model.",
+    "Market comparisons use margin-adjusted 1X2 fair probabilities, not raw odds."
+  ]
+}

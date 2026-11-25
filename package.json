@@ -1,0 +1,21 @@
+{
+  "name": "leagueplus-engine",
+  "version": "2.9.0",
+  "private": true,
+  "description": "League Plus Stats & Prediction Engine (Chrome extension) — local research engine with optional PIN-protected Netlify remote access",
+  "scripts": {
+    "test": "node --test tests/core.test.js tests/db.test.js tests/sync.test.js tests/ledger.test.js tests/stats.test.js tests/research.test.js tests/models.test.js tests/modelEval.test.js tests/specialists.test.js tests/calibration.test.js tests/learn.test.js tests/decision.test.js tests/performance.test.js tests/cloud.test.js tests/auth.test.js",
+    "collect": "node research/collect.cjs",
+    "research": "node research/report.cjs",
+    "models": "node research/models.cjs",
+    "specialists": "node research/specialists.cjs",
+    "calibration": "node research/calibration.cjs",
+    "decision": "node research/decision.cjs",
+    "final": "node research/final.cjs",
+    "web": "node tools/build-web.cjs && node tests/serve-web.cjs",
+    "remote:demo": "node tests/serve-remote.cjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^11.1.11"
+  }
+}

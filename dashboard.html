@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>League Plus Engine</title>
+<link rel="stylesheet" href="dashboard.css">
+<style>
+  .logo.lp{background:#f5b942;color:#141004;font-size:18px}
+  .odd{display:inline-block;min-width:46px;text-align:center;padding:2px 4px;border-radius:5px;background:var(--panel2);font-weight:700}
+  .odd.val{background:var(--acc);color:#04120a}
+  .cd{font-variant-numeric:tabular-nums;font-weight:800}
+  .gm{color:var(--mute);font-size:12px}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo lp">L+</span><div><b>League Plus Stats &amp; Prediction Engine</b><small id="syncLine">Loading…</small></div></div>
+  <div class="actions"><button id="btnSync" class="btn">⟳ Capture now</button></div>
+</header>
+<nav class="tabs" id="tabs">
+  <button data-tab="overview" class="on">Overview</button>
+  <button data-tab="next">⚡ Next round</button>
+  <button data-tab="slip">🧾 Slip builder</button>
+  <button data-tab="value">💰 Value finder</button>
+  <button data-tab="results">Results</button>
+  <button data-tab="tables">Tables &amp; teams</button>
+  <button data-tab="data">🩺 Data quality</button>
+  <button data-tab="ledger">📒 Ledger</button>
+  <button data-tab="research">🔬 Research</button>
+  <button data-tab="specialists">🧬 Specialists</button>
+  <button data-tab="calibration">🎯 Calibration</button>
+  <button data-tab="learning">🧠 Learning</button>
+  <button data-tab="decision">💵 Decision</button>
+  <button data-tab="intelligence">📊 Intelligence</button>
+  <button data-tab="settings">⚙ Settings</button>
+</nav>
+<main id="view"></main>
+<div id="modal" class="modal hidden"><div class="modal-card"><button class="x" id="modalX">✕</button><div id="modalBody"></div></div></div>
+<script src="lib/core.js"></script>
+<script src="lib/model.js"></script>
+<script src="lib/stats.js"></script>
+<script src="lib/modelEval.js"></script>
+<script src="lib/calibration.js"></script>
+<script src="lib/weights.js"></script>
+<script src="lib/decision.js"></script>
+<script src="lib/accumulator.js"></script>
+<script src="lib/performance.js"></script>
+<script src="lib/ledger.js"></script>
+<script src="lib/research.js"></script>
+<script src="lib/sequence.js"></script>
+<script src="lib/patterns.js"></script>
+<script src="lib/specialists.js"></script>
+<script src="lib/learn.js"></script>
+<script src="lib/cloud.js"></script>
+<script src="lib/slip.js"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>

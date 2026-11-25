@@ -1,0 +1,287 @@
+{
+  "meta": {
+    "version": "stage5-eval-v1",
+    "generatedAt": 1795530614185,
+    "matches": 104,
+    "rounds": 8,
+    "testRounds": 4,
+    "testMatches": 52,
+    "trainNTotal": 52,
+    "minTrainRounds": 2,
+    "minCompMatches": 10,
+    "fairMethod": "proportional",
+    "permutations": 299,
+    "seed": 20261124,
+    "models": [
+      "base",
+      "market",
+      "mkt",
+      "team",
+      "dc",
+      "emp",
+      "blend",
+      "ensemble"
+    ],
+    "labels": {
+      "base": "historical base",
+      "market": "market fair",
+      "mkt": "market Poisson",
+      "team": "team ratings",
+      "dc": "Dixon-Coles",
+      "emp": "empirical/Bayesian",
+      "blend": "blend(team,mkt)",
+      "ensemble": "equal ensemble"
+    },
+    "warnings": [
+      "Small evaluation sample (4 test rounds, 52 matches); treat model differences as provisional."
+    ]
+  },
+  "byModel": {
+    "base": {
+      "n": 156,
+      "brier": 0.5532919890760132,
+      "logLoss": 0.8267783352167826
+    },
+    "market": {
+      "n": 156,
+      "brier": 0.5411238706870397,
+      "logLoss": 0.8032948661522548
+    },
+    "mkt": {
+      "n": 156,
+      "brier": 0.5410762177595237,
+      "logLoss": 0.8031849773164448
+    },
+    "blend": {
+      "n": 156,
+      "brier": 0.5410762177595237,
+      "logLoss": 0.8031849773164448
+    },
+    "ensemble": {
+      "n": 156,
+      "brier": 0.5410762177595237,
+      "logLoss": 0.8031849773164448
+    }
+  },
+  "byMarket": {
+    "1X2": {
+      "base": {
+        "n": 52,
+        "brier": 0.6326323774844483,
+        "logLoss": 1.06383544283915,
+        "avg": null
+      },
+      "market": {
+        "n": 52,
+        "brier": 0.5884806652168897,
+        "logLoss": 0.9881806278556893,
+        "avg": null
+      },
+      "mkt": {
+        "n": 52,
+        "brier": 0.5883417625547382,
+        "logLoss": 0.9878676174162897,
+        "avg": null
+      },
+      "blend": {
+        "n": 52,
+        "brier": 0.5883417625547382,
+        "logLoss": 0.9878676174162897,
+        "avg": null
+      },
+      "ensemble": {
+        "n": 52,
+        "brier": 0.5883417625547382,
+        "logLoss": 0.9878676174162897,
+        "avg": null
+      }
+    },
+    "OU2.5": {
+      "base": {
+        "n": 52,
+        "brier": 0.5267094017094016,
+        "logLoss": 0.7208267270775084,
+        "avg": null
+      },
+      "market": {
+        "n": 52,
+        "brier": 0.5104063968638902,
+        "logLoss": 0.7038828255002259,
+        "avg": null
+      },
+      "mkt": {
+        "n": 52,
+        "brier": 0.5097136079626625,
+        "logLoss": 0.7031582284596632,
+        "avg": null
+      },
+      "blend": {
+        "n": 52,
+        "brier": 0.5097136079626625,
+        "logLoss": 0.7031582284596632,
+        "avg": null
+      },
+      "ensemble": {
+        "n": 52,
+        "brier": 0.5097136079626625,
+        "logLoss": 0.7031582284596632,
+        "avg": null
+      }
+    },
+    "BTTS": {
+      "base": {
+        "n": 52,
+        "brier": 0.5005341880341879,
+        "logLoss": 0.6956728357336904,
+        "avg": null
+      },
+      "market": {
+        "n": 52,
+        "brier": 0.524484549980339,
+        "logLoss": 0.7178211451008496,
+        "avg": null
+      },
+      "mkt": {
+        "n": 52,
+        "brier": 0.5251732827611704,
+        "logLoss": 0.7185290860733807,
+        "avg": null
+      },
+      "blend": {
+        "n": 52,
+        "brier": 0.5251732827611704,
+        "logLoss": 0.7185290860733807,
+        "avg": null
+      },
+      "ensemble": {
+        "n": 52,
+        "brier": 0.5251732827611704,
+        "logLoss": 0.7185290860733807,
+        "avg": null
+      }
+    }
+  },
+  "leaderboard": [
+    {
+      "model": "mkt",
+      "n": 156,
+      "brier": 0.5410762177595237,
+      "logLoss": 0.8031849773164448
+    },
+    {
+      "model": "blend",
+      "n": 156,
+      "brier": 0.5410762177595237,
+      "logLoss": 0.8031849773164448
+    },
+    {
+      "model": "ensemble",
+      "n": 156,
+      "brier": 0.5410762177595237,
+      "logLoss": 0.8031849773164448
+    },
+    {
+      "model": "market",
+      "n": 156,
+      "brier": 0.5411238706870397,
+      "logLoss": 0.8032948661522548
+    },
+    {
+      "model": "base",
+      "n": 156,
+      "brier": 0.5532919890760132,
+      "logLoss": 0.8267783352167826
+    }
+  ],
+  "comparisons": [
+    {
+      "model": "base",
+      "vs": "market",
+      "n": 52,
+      "diffLogLoss": 0.07565481498346104,
+      "low": -0.03733209452714446,
+      "high": 0.1867845570574211,
+      "p": 0.21333333333333335,
+      "improves": false,
+      "q": 0.7733333333333333
+    },
+    {
+      "model": "mkt",
+      "vs": "market",
+      "n": 52,
+      "diffLogLoss": -0.0003130104393996938,
+      "low": -0.0023039210242805394,
+      "high": 0.0017468945390822083,
+      "p": 0.6933333333333334,
+      "improves": true,
+      "q": 0.7733333333333333
+    },
+    {
+      "model": "blend",
+      "vs": "market",
+      "n": 52,
+      "diffLogLoss": -0.0003130104393996938,
+      "low": -0.002132144174103792,
+      "high": 0.001835650588250712,
+      "p": 0.72,
+      "improves": true,
+      "q": 0.7733333333333333
+    },
+    {
+      "model": "ensemble",
+      "vs": "market",
+      "n": 52,
+      "diffLogLoss": -0.0003130104393996938,
+      "low": -0.002260996630587339,
+      "high": 0.0016853581552960185,
+      "p": 0.7733333333333333,
+      "improves": true,
+      "q": 0.7733333333333333
+    }
+  ],
+  "checks": [
+    {
+      "round": "6:355434",
+      "comp": 4,
+      "trainN": 10,
+      "testStart": 1795518072000,
+      "trainCutoff": 1795516992000,
+      "leakage": false
+    },
+    {
+      "round": "3:441481",
+      "comp": 9,
+      "trainN": 12,
+      "testStart": 1795518192000,
+      "trainCutoff": 1795517112000,
+      "leakage": false
+    },
+    {
+      "round": "3:441481",
+      "comp": 1,
+      "trainN": 10,
+      "testStart": 1795518192000,
+      "trainCutoff": 1795517112000,
+      "leakage": false
+    },
+    {
+      "round": "7:152799",
+      "comp": 8,
+      "trainN": 10,
+      "testStart": 1795518267000,
+      "trainCutoff": 1795517007000,
+      "leakage": false
+    },
+    {
+      "round": "4:441480",
+      "comp": 2,
+      "trainN": 10,
+      "testStart": 1795518312000,
+      "trainCutoff": 1795516872000,
+      "leakage": false
+    }
+  ],
+  "warnings": [
+    "Small evaluation sample (4 test rounds, 52 matches); treat model differences as provisional."
+  ]
+}

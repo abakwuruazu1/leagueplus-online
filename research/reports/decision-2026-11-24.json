@@ -1,0 +1,652 @@
+{
+  "meta": {
+    "version": "stage9-decision-v1",
+    "generatedAt": 1795556217043,
+    "source": "collector",
+    "files": 1,
+    "samples": 364,
+    "evaluation": {
+      "version": "stage5-eval-v1",
+      "generatedAt": 1795556217024,
+      "matches": 104,
+      "rounds": 8,
+      "testRounds": 4,
+      "testMatches": 52,
+      "trainNTotal": 52,
+      "minTrainRounds": 3,
+      "minCompMatches": 10,
+      "fairMethod": "proportional",
+      "permutations": 99,
+      "seed": 20261124,
+      "models": [
+        "base",
+        "market",
+        "mkt",
+        "team",
+        "dc",
+        "emp",
+        "blend",
+        "ensemble"
+      ],
+      "labels": {
+        "base": "historical base",
+        "market": "market fair",
+        "mkt": "market Poisson",
+        "team": "team ratings",
+        "dc": "Dixon-Coles",
+        "emp": "empirical/Bayesian",
+        "blend": "blend(team,mkt)",
+        "ensemble": "equal ensemble"
+      },
+      "warnings": [
+        "Small evaluation sample (4 test rounds, 52 matches); treat model differences as provisional."
+      ]
+    },
+    "decision": {
+      "enabled": false,
+      "policy": {
+        "version": "stage9-decision-v1",
+        "enabled": false,
+        "minEdge": {
+          "1X2": 0,
+          "OU2.5": 0,
+          "BTTS": 0,
+          "default": 0
+        },
+        "minPointEdge": 0,
+        "minProbability": 0.05,
+        "maxProbability": 0.95,
+        "minOdds": 1.2,
+        "maxOdds": 8,
+        "kellyFraction": 0.25,
+        "maxStakeUnits": 2,
+        "minStakeUnits": 0.01,
+        "uncertaintyMultiplier": {
+          "narrow": 1,
+          "moderate": 0.75,
+          "wide": 0.5
+        },
+        "blockWide": false,
+        "minSamples": 500,
+        "minTrainBets": 40,
+        "minBets": 100,
+        "minTestSamples": 100,
+        "trainFraction": 0.5,
+        "thresholds": [
+          0,
+          0.01,
+          0.02,
+          0.03,
+          0.04,
+          0.05
+        ],
+        "permutations": 299,
+        "seed": 20261124,
+        "__normalized": true
+      },
+      "threshold": 0,
+      "train": {
+        "bets": 0,
+        "wins": 0,
+        "profit": 0,
+        "roi": null,
+        "staked": 0,
+        "profitStaked": 0,
+        "roiStaked": null,
+        "avgStake": null,
+        "maxDrawdown": 0,
+        "perBet": []
+      },
+      "test": {
+        "bets": 0,
+        "wins": 0,
+        "profit": 0,
+        "roi": null,
+        "staked": 0,
+        "profitStaked": 0,
+        "roiStaked": null,
+        "avgStake": null,
+        "maxDrawdown": 0,
+        "perBet": []
+      },
+      "ciLow": null,
+      "ciHigh": null,
+      "p": null,
+      "nTrain": 224,
+      "nTest": 140
+    },
+    "warnings": [
+      "Small evaluation sample (4 test rounds, 52 matches); treat model differences as provisional.",
+      "No value policy survived the chronological holdout with a positive lower confidence bound; decisions remain NO_BET.",
+      "Policy holdout produced only 0 bets; need 100."
+    ]
+  },
+  "result": {
+    "version": "stage9-decision-v1",
+    "decision": {
+      "enabled": false,
+      "policy": {
+        "version": "stage9-decision-v1",
+        "enabled": false,
+        "minEdge": {
+          "1X2": 0,
+          "OU2.5": 0,
+          "BTTS": 0,
+          "default": 0
+        },
+        "minPointEdge": 0,
+        "minProbability": 0.05,
+        "maxProbability": 0.95,
+        "minOdds": 1.2,
+        "maxOdds": 8,
+        "kellyFraction": 0.25,
+        "maxStakeUnits": 2,
+        "minStakeUnits": 0.01,
+        "uncertaintyMultiplier": {
+          "narrow": 1,
+          "moderate": 0.75,
+          "wide": 0.5
+        },
+        "blockWide": false,
+        "minSamples": 500,
+        "minTrainBets": 40,
+        "minBets": 100,
+        "minTestSamples": 100,
+        "trainFraction": 0.5,
+        "thresholds": [
+          0,
+          0.01,
+          0.02,
+          0.03,
+          0.04,
+          0.05
+        ],
+        "permutations": 299,
+        "seed": 20261124,
+        "__normalized": true
+      },
+      "threshold": 0,
+      "train": {
+        "bets": 0,
+        "wins": 0,
+        "profit": 0,
+        "roi": null,
+        "staked": 0,
+        "profitStaked": 0,
+        "roiStaked": null,
+        "avgStake": null,
+        "maxDrawdown": 0,
+        "perBet": []
+      },
+      "test": {
+        "bets": 0,
+        "wins": 0,
+        "profit": 0,
+        "roi": null,
+        "staked": 0,
+        "profitStaked": 0,
+        "roiStaked": null,
+        "avgStake": null,
+        "maxDrawdown": 0,
+        "perBet": []
+      },
+      "ciLow": null,
+      "ciHigh": null,
+      "p": null,
+      "nTrain": 224,
+      "nTest": 140
+    },
+    "variants": [
+      {
+        "threshold": 0,
+        "train": {
+          "bets": 0,
+          "wins": 0,
+          "profit": 0,
+          "roi": null,
+          "staked": 0,
+          "profitStaked": 0,
+          "roiStaked": null,
+          "avgStake": null,
+          "maxDrawdown": 0,
+          "perBet": []
+        },
+        "test": {
+          "bets": 0,
+          "wins": 0,
+          "profit": 0,
+          "roi": null,
+          "staked": 0,
+          "profitStaked": 0,
+          "roiStaked": null,
+          "avgStake": null,
+          "maxDrawdown": 0,
+          "perBet": []
+        },
+        "ciLow": null,
+        "ciHigh": null,
+        "p": null,
+        "policy": {
+          "version": "stage9-decision-v1",
+          "enabled": true,
+          "minEdge": {
+            "1X2": 0,
+            "OU2.5": 0,
+            "BTTS": 0,
+            "default": 0
+          },
+          "minPointEdge": 0,
+          "minProbability": 0.05,
+          "maxProbability": 0.95,
+          "minOdds": 1.2,
+          "maxOdds": 8,
+          "kellyFraction": 0.25,
+          "maxStakeUnits": 2,
+          "minStakeUnits": 0.01,
+          "uncertaintyMultiplier": {
+            "narrow": 1,
+            "moderate": 0.75,
+            "wide": 0.5
+          },
+          "blockWide": false,
+          "minSamples": 500,
+          "minTrainBets": 40,
+          "minBets": 100,
+          "minTestSamples": 100,
+          "trainFraction": 0.5,
+          "thresholds": [
+            0,
+            0.01,
+            0.02,
+            0.03,
+            0.04,
+            0.05
+          ],
+          "permutations": 299,
+          "seed": 20261124,
+          "__normalized": true
+        }
+      },
+      {
+        "threshold": 0.01,
+        "train": {
+          "bets": 0,
+          "wins": 0,
+          "profit": 0,
+          "roi": null,
+          "staked": 0,
+          "profitStaked": 0,
+          "roiStaked": null,
+          "avgStake": null,
+          "maxDrawdown": 0,
+          "perBet": []
+        },
+        "test": {
+          "bets": 0,
+          "wins": 0,
+          "profit": 0,
+          "roi": null,
+          "staked": 0,
+          "profitStaked": 0,
+          "roiStaked": null,
+          "avgStake": null,
+          "maxDrawdown": 0,
+          "perBet": []
+        },
+        "ciLow": null,
+        "ciHigh": null,
+        "p": null,
+        "policy": {
+          "version": "stage9-decision-v1",
+          "enabled": true,
+          "minEdge": {
+            "1X2": 0.01,
+            "OU2.5": 0.009000000000000001,
+            "BTTS": 0.009000000000000001,
+            "default": 0.012
+          },
+          "minPointEdge": 0,
+          "minProbability": 0.05,
+          "maxProbability": 0.95,
+          "minOdds": 1.2,
+          "maxOdds": 8,
+          "kellyFraction": 0.25,
+          "maxStakeUnits": 2,
+          "minStakeUnits": 0.01,
+          "uncertaintyMultiplier": {
+            "narrow": 1,
+            "moderate": 0.75,
+            "wide": 0.5
+          },
+          "blockWide": false,
+          "minSamples": 500,
+          "minTrainBets": 40,
+          "minBets": 100,
+          "minTestSamples": 100,
+          "trainFraction": 0.5,
+          "thresholds": [
+            0,
+            0.01,
+            0.02,
+            0.03,
+            0.04,
+            0.05
+          ],
+          "permutations": 299,
+          "seed": 20261124,
+          "__normalized": true
+        }
+      },
+      {
+        "threshold": 0.02,
+        "train": {
+          "bets": 0,
+          "wins": 0,
+          "profit": 0,
+          "roi": null,
+          "staked": 0,
+          "profitStaked": 0,
+          "roiStaked": null,
+          "avgStake": null,
+          "maxDrawdown": 0,
+          "perBet": []
+        },
+        "test": {
+          "bets": 0,
+          "wins": 0,
+          "profit": 0,
+          "roi": null,
+          "staked": 0,
+          "profitStaked": 0,
+          "roiStaked": null,
+          "avgStake": null,
+          "maxDrawdown": 0,
+          "perBet": []
+        },
+        "ciLow": null,
+        "ciHigh": null,
+        "p": null,
+        "policy": {
+          "version": "stage9-decision-v1",
+          "enabled": true,
+          "minEdge": {
+            "1X2": 0.02,
+            "OU2.5": 0.018000000000000002,
+            "BTTS": 0.018000000000000002,
+            "default": 0.024
+          },
+          "minPointEdge": 0,
+          "minProbability": 0.05,
+          "maxProbability": 0.95,
+          "minOdds": 1.2,
+          "maxOdds": 8,
+          "kellyFraction": 0.25,
+          "maxStakeUnits": 2,
+          "minStakeUnits": 0.01,
+          "uncertaintyMultiplier": {
+            "narrow": 1,
+            "moderate": 0.75,
+            "wide": 0.5
+          },
+          "blockWide": false,
+          "minSamples": 500,
+          "minTrainBets": 40,
+          "minBets": 100,
+          "minTestSamples": 100,
+          "trainFraction": 0.5,
+          "thresholds": [
+            0,
+            0.01,
+            0.02,
+            0.03,
+            0.04,
+            0.05
+          ],
+          "permutations": 299,
+          "seed": 20261124,
+          "__normalized": true
+        }
+      },
+      {
+        "threshold": 0.03,
+        "train": {
+          "bets": 0,
+          "wins": 0,
+          "profit": 0,
+          "roi": null,
+          "staked": 0,
+          "profitStaked": 0,
+          "roiStaked": null,
+          "avgStake": null,
+          "maxDrawdown": 0,
+          "perBet": []
+        },
+        "test": {
+          "bets": 0,
+          "wins": 0,
+          "profit": 0,
+          "roi": null,
+          "staked": 0,
+          "profitStaked": 0,
+          "roiStaked": null,
+          "avgStake": null,
+          "maxDrawdown": 0,
+          "perBet": []
+        },
+        "ciLow": null,
+        "ciHigh": null,
+        "p": null,
+        "policy": {
+          "version": "stage9-decision-v1",
+          "enabled": true,
+          "minEdge": {
+            "1X2": 0.03,
+            "OU2.5": 0.027,
+            "BTTS": 0.027,
+            "default": 0.036
+          },
+          "minPointEdge": 0,
+          "minProbability": 0.05,
+          "maxProbability": 0.95,
+          "minOdds": 1.2,
+          "maxOdds": 8,
+          "kellyFraction": 0.25,
+          "maxStakeUnits": 2,
+          "minStakeUnits": 0.01,
+          "uncertaintyMultiplier": {
+            "narrow": 1,
+            "moderate": 0.75,
+            "wide": 0.5
+          },
+          "blockWide": false,
+          "minSamples": 500,
+          "minTrainBets": 40,
+          "minBets": 100,
+          "minTestSamples": 100,
+          "trainFraction": 0.5,
+          "thresholds": [
+            0,
+            0.01,
+            0.02,
+            0.03,
+            0.04,
+            0.05
+          ],
+          "permutations": 299,
+          "seed": 20261124,
+          "__normalized": true
+        }
+      },
+      {
+        "threshold": 0.04,
+        "train": {
+          "bets": 0,
+          "wins": 0,
+          "profit": 0,
+          "roi": null,
+          "staked": 0,
+          "profitStaked": 0,
+          "roiStaked": null,
+          "avgStake": null,
+          "maxDrawdown": 0,
+          "perBet": []
+        },
+        "test": {
+          "bets": 0,
+          "wins": 0,
+          "profit": 0,
+          "roi": null,
+          "staked": 0,
+          "profitStaked": 0,
+          "roiStaked": null,
+          "avgStake": null,
+          "maxDrawdown": 0,
+          "perBet": []
+        },
+        "ciLow": null,
+        "ciHigh": null,
+        "p": null,
+        "policy": {
+          "version": "stage9-decision-v1",
+          "enabled": true,
+          "minEdge": {
+            "1X2": 0.04,
+            "OU2.5": 0.036000000000000004,
+            "BTTS": 0.036000000000000004,
+            "default": 0.048
+          },
+          "minPointEdge": 0,
+          "minProbability": 0.05,
+          "maxProbability": 0.95,
+          "minOdds": 1.2,
+          "maxOdds": 8,
+          "kellyFraction": 0.25,
+          "maxStakeUnits": 2,
+          "minStakeUnits": 0.01,
+          "uncertaintyMultiplier": {
+            "narrow": 1,
+            "moderate": 0.75,
+            "wide": 0.5
+          },
+          "blockWide": false,
+          "minSamples": 500,
+          "minTrainBets": 40,
+          "minBets": 100,
+          "minTestSamples": 100,
+          "trainFraction": 0.5,
+          "thresholds": [
+            0,
+            0.01,
+            0.02,
+            0.03,
+            0.04,
+            0.05
+          ],
+          "permutations": 299,
+          "seed": 20261124,
+          "__normalized": true
+        }
+      },
+      {
+        "threshold": 0.05,
+        "train": {
+          "bets": 0,
+          "wins": 0,
+          "profit": 0,
+          "roi": null,
+          "staked": 0,
+          "profitStaked": 0,
+          "roiStaked": null,
+          "avgStake": null,
+          "maxDrawdown": 0,
+          "perBet": []
+        },
+        "test": {
+          "bets": 0,
+          "wins": 0,
+          "profit": 0,
+          "roi": null,
+          "staked": 0,
+          "profitStaked": 0,
+          "roiStaked": null,
+          "avgStake": null,
+          "maxDrawdown": 0,
+          "perBet": []
+        },
+        "ciLow": null,
+        "ciHigh": null,
+        "p": null,
+        "policy": {
+          "version": "stage9-decision-v1",
+          "enabled": true,
+          "minEdge": {
+            "1X2": 0.05,
+            "OU2.5": 0.045000000000000005,
+            "BTTS": 0.045000000000000005,
+            "default": 0.06
+          },
+          "minPointEdge": 0,
+          "minProbability": 0.05,
+          "maxProbability": 0.95,
+          "minOdds": 1.2,
+          "maxOdds": 8,
+          "kellyFraction": 0.25,
+          "maxStakeUnits": 2,
+          "minStakeUnits": 0.01,
+          "uncertaintyMultiplier": {
+            "narrow": 1,
+            "moderate": 0.75,
+            "wide": 0.5
+          },
+          "blockWide": false,
+          "minSamples": 500,
+          "minTrainBets": 40,
+          "minBets": 100,
+          "minTestSamples": 100,
+          "trainFraction": 0.5,
+          "thresholds": [
+            0,
+            0.01,
+            0.02,
+            0.03,
+            0.04,
+            0.05
+          ],
+          "permutations": 299,
+          "seed": 20261124,
+          "__normalized": true
+        }
+      }
+    ],
+    "metrics": {
+      "train": {
+        "bets": 0,
+        "wins": 0,
+        "profit": 0,
+        "roi": null,
+        "staked": 0,
+        "profitStaked": 0,
+        "roiStaked": null,
+        "avgStake": null,
+        "maxDrawdown": 0,
+        "perBet": []
+      },
+      "test": {
+        "bets": 0,
+        "wins": 0,
+        "profit": 0,
+        "roi": null,
+        "staked": 0,
+        "profitStaked": 0,
+        "roiStaked": null,
+        "avgStake": null,
+        "maxDrawdown": 0,
+        "perBet": []
+      }
+    },
+    "warnings": [
+      "No value policy survived the chronological holdout with a positive lower confidence bound; decisions remain NO_BET.",
+      "Policy holdout produced only 0 bets; need 100."
+    ]
+  }
+}

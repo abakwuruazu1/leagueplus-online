@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>League Plus — Slip Builder</title>
+<link rel="stylesheet" href="/dashboard.css">
+<style>
+  .web-note{max-width:1500px;margin:18px auto 0;padding:0 22px}
+  .web-note .card{margin:0}
+  .foot{max-width:1500px;margin:0 auto;padding:0 22px 50px;color:var(--mute);font-size:13px}
+  .status{font-size:13px;color:var(--mute)}
+  .status.err{color:var(--bad)}
+  .actions a{display:inline-flex;align-items:center}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="logo lp">L+</span>
+    <div><b>League Plus Slip Builder</b><small id="status" class="status">Loading current Bet9ja round…</small></div>
+  </div>
+  <div class="actions"><a href="/remote" class="btn ghost" style="text-decoration:none;margin-right:8px">📱 Phone access</a><button id="reload" class="btn ghost">↻ Reload odds</button></div>
+</header>
+<main id="view"></main>
+<div class="web-note">
+  <div class="note"><b>What this online version does:</b> it reads Bet9ja's current League Plus round and builds the slip with the highest market-implied chance of reaching your target odds. It does not place bets, does not have your recorded history and cannot calibrate or backtest online. Use the Chrome extension for those. <b>No probability here is a guarantee.</b></div>
+</div>
+<div class="foot">Odds and fixtures belong to Bet9ja. This is an independent research tool. If you bet, you do so at your own risk.</div>
+<script src="/lib/core.js"></script>
+<script src="/lib/model.js"></script>
+<script src="/lib/slip.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>

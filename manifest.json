@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "League Plus Stats & Prediction Engine",
+  "version": "2.9.0",
+  "description": "Records every Bet9ja League Plus round with immutable history, a gated autonomous learning pipeline, uncertainty-aware staking decisions and a PIN-protected phone view hosted separately on Netlify.",
+  "permissions": ["storage", "alarms", "unlimitedStorage"],
+  "host_permissions": ["https://stadium-tv-api.bet9ja.com/*", "https://*.netlify.app/*"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "Open League Plus Engine", "default_icon": { "16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png" } },
+  "icons": { "16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png" },
+  "minimum_chrome_version": "120"
+}

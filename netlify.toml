@@ -1,0 +1,38 @@
+[build]
+  command = "node tools/build-web.cjs"
+  publish = "web"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+  included_files = ["lib/core.js"]
+
+[[redirects]]
+  from = "/api/odds"
+  to = "/.netlify/functions/odds"
+  status = 200
+
+[[redirects]]
+  from = "/api/snapshot"
+  to = "/.netlify/functions/snapshot"
+  status = 200
+
+[[redirects]]
+  from = "/api/login"
+  to = "/.netlify/functions/login"
+  status = 200
+
+[[redirects]]
+  from = "/api/logout"
+  to = "/.netlify/functions/logout"
+  status = 200
+
+[[redirects]]
+  from = "/api/session"
+  to = "/.netlify/functions/session"
+  status = 200
+
+[[redirects]]
+  from = "/remote"
+  to = "/remote.html"
+  status = 200
